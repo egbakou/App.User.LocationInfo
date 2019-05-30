@@ -30,5 +30,18 @@ namespace App.User.LocationInfo.Services
             JObject jsonObject = JObject.Parse(response.Content);
             return (string)jsonObject["ip"];
         }
+
+        /// <summary>
+        /// Get current user's country code.
+        /// </summary>
+        /// <returns>Current user's country code.</returns>
+        public static async Task<string> GetUserCountryCodeAsync()
+        {
+            var client = new RestClient();
+            var request = new RestRequest(APIResources.IpApi, Method.GET, DataFormat.Json);
+            IRestResponse response = await client.ExecuteGetTaskAsync(request);
+            JObject jsonObject = JObject.Parse(response.Content);
+            return (string)jsonObject["country"];
+        }
     }
 }
