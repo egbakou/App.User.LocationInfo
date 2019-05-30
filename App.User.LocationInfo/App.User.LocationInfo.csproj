@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Kodjo Laurent Egbakou</Authors>
+    <Company>Lioncoding</Company>
+    <Description>Retrieve user's location informations without GPS activation.</Description>
+    <PackageProjectUrl>https://github.com/egbakou/App.User.LocationInfo</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/egbakou/App.User.LocationInfo</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
