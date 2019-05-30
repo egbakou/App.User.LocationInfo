@@ -72,5 +72,22 @@ namespace App.User.LocationInfo.Services
             JObject jsonObject = JObject.Parse(response.Content);
             return Utility.JsonObjectToIpApiResult(jsonObject);
         }
+
+
+        /// <summary>
+        /// Get informations about the user's location with URL of the country flag.
+        /// </summary>
+        /// <returns>The <see cref="Task{UserLocationInfo}"/></returns>
+        public static async Task<UserLocationInfo> GetLocationInfoAsync()
+        {
+            BasicUserLocationInfo ipApiResult = await GetBasicLocatioInfoAsync();
+            var client = new RestClient();
+            var request = new RestRequest(APIResources.RestcountriesAp + ipApiResult.CountryName, Method.GET, DataFormat.Json);
+            IRestResponse response = await client.ExecuteGetTaskAsync(request);
+            Debug.WriteLine(response.Content);
+            JArray jsonArray = JArray.Parse(response.Content.ToString());
+            var flagUrl = (string)jsonArray[0]["flag"];
+            return new UserLocationInfo(ipApiResult, flagUrl);
+        }
     }
 }
