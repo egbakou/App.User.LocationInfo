@@ -58,5 +58,19 @@ namespace App.User.LocationInfo.Services
             JObject jsonObject = JObject.Parse(response.Content);
             return (string)jsonObject["country_name"];
         }
+
+
+        /// <summary>
+        /// Get informations about the user's location without URL of the country flag.
+        /// </summary>
+        /// <returns>An instance of <see cref="IpApiResult"/></returns>
+        public static async Task<BasicUserLocationInfo> GetBasicLocatioInfoAsync()
+        {
+            var client = new RestClient();
+            var request = new RestRequest(APIResources.IpApi, Method.GET, DataFormat.Json);
+            IRestResponse response = await client.ExecuteGetTaskAsync(request);
+            JObject jsonObject = JObject.Parse(response.Content);
+            return Utility.JsonObjectToIpApiResult(jsonObject);
+        }
     }
 }
