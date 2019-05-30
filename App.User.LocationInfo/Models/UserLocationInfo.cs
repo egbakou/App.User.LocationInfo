@@ -14,110 +14,92 @@ namespace App.User.LocationInfo.Models
     public class UserLocationInfo
     {
         /// <summary>
-        /// Gets or sets the Ip
-        /// Ip adress
+        /// Gets or sets the Ip adress
         /// </summary>
         public string Ip { get; set; }
 
         /// <summary>
-        /// Gets or sets the City
-        /// City name
+        /// Gets or sets the City name
         /// </summary>
         public string City { get; set; }
 
         /// <summary>
-        /// Gets or sets the Region
-        /// Region name
+        /// Gets or sets the Region name
         /// </summary>
         public string Region { get; set; }
 
         /// <summary>
-        /// Gets or sets the RegionCode
-        /// Region code
+        /// Gets or sets the Region code
         /// </summary>
         public string RegionCode { get; set; }
 
         /// <summary>
-        /// Gets or sets the Country
-        /// Country code
+        /// Gets or sets the Country code
         /// </summary>
         public string Country { get; set; }
 
         /// <summary>
-        /// Gets or sets the CountryName
-        /// Country name
+        /// Gets or sets the Country name
         /// </summary>
         public string CountryName { get; set; }
 
         /// <summary>
-        /// Gets or sets the CountryFlagUrl
-        /// Link to Country flag
+        /// Gets or sets the Link to the Country flag
         /// </summary>
         public string CountryFlagUrl { get; set; }
 
         /// <summary>
-        /// Gets or sets the ContinentCode
-        /// Continent code
+        /// Gets or sets the Continent code
         /// </summary>
         public string ContinentCode { get; set; }
 
         /// <summary>
-        /// Gets or sets a value indicating whether InEU
-        /// Current user's country is in Eiuroppean Union ?
+        /// Gets or sets a value indicating whether Current user's country is in European Union ?
         /// </summary>
         public bool InEU { get; set; }
 
         /// <summary>
-        /// Gets or sets the Postal
-        /// Postal code
+        /// Gets or sets Postal code
         /// </summary>
         public string Postal { get; set; }
 
         /// <summary>
-        /// Gets or sets the Location
-        /// User location: Latitude and Latitude
+        /// Gets or sets user's location: Latitude and Latitude
         /// </summary>
         public GeoPosition Location { get; set; }
 
         /// <summary>
-        /// Gets or sets the Timezone
-        /// Country TimeZone
+        /// Gets or sets the Country TimeZone
         /// </summary>
         public string Timezone { get; set; }
 
         /// <summary>
-        /// Gets or sets the UtcOffset
-        /// UTC Offset
+        /// Gets or sets the UTC Offset
         /// </summary>
         public string UtcOffset { get; set; }
 
         /// <summary>
-        /// Gets or sets the CountryCallingCode
-        /// Country Calling Code
+        /// Gets or sets the Country Calling Code
         /// </summary>
         public string CountryCallingCode { get; set; }
 
         /// <summary>
-        /// Gets or sets the Currency
-        /// country Currency
+        /// Gets or sets the Currency of the country
         /// </summary>
         public string Currency { get; set; }
 
         /// <summary>
-        /// Gets or sets the Languages
-        /// Country languages
+        /// Gets or sets the country languages
         /// </summary>
         public List<string> Languages { get; set; }
 
         /// <summary>
-        /// Gets or sets the Asn
-        /// ASN
+        /// Gets or sets the ASN
         /// </summary>
         public string Asn { get; set; }
 
         /// <summary>
-        /// Gets or sets the Org
-        /// Internet Service Provider
+        /// Gets or sets the Internet Service Provider
         /// </summary>
         public string Org { get; set; }
 
