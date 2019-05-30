@@ -18,6 +18,17 @@ namespace App.User.LocationInfo.Services
     /// </summary>
     public class TrackingService
     {
-        
+        /// <summary>
+        /// Get current user's IP Adress.
+        /// </summary>
+        /// <returns>User's IP Adres.</returns>
+        public static async Task<string> GetUserIPAdressAsync()
+        {
+            var client = new RestClient(APIResources.IpifyApi);
+            var request = new RestRequest(Method.GET);
+            IRestResponse response = await client.ExecuteGetTaskAsync(request);
+            JObject jsonObject = JObject.Parse(response.Content);
+            return (string)jsonObject["ip"];
+        }
     }
 }
