@@ -5,10 +5,12 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Kodjo Laurent Egbakou</Authors>
     <Company>Lioncoding</Company>
-    <Description>Retrieve user's location informations without GPS activation.</Description>
+    <Description>This plugin retrieves informations about user's location without the GPS activation in a Xamarin.Forms mobile application.</Description>
     <PackageProjectUrl>https://github.com/egbakou/App.User.LocationInfo</PackageProjectUrl>
     <RepositoryUrl>https://github.com/egbakou/App.User.LocationInfo</RepositoryUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/egbakou/logos/master/logoApp-User-LocationInfo222.png</PackageIconUrl>
   </PropertyGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />

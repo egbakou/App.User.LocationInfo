@@ -12,7 +12,7 @@ using System.Linq;
 namespace App.User.LocationInfo.Services
 {
     /// <summary>
-    /// Defines the <see cref="Utility" />
+    /// Defines <see cref="Utility" /> class.
     /// </summary>
     public class Utility
     {
@@ -20,8 +20,8 @@ namespace App.User.LocationInfo.Services
         /// Convert JObject(Json object) to BasicUserLocationInfo.
         /// </summary>
         /// <param name="jsonObject">The jsonObject<see cref="JObject"/></param>
-        /// <returns>The <see cref="BasicUserLocationInfo"/></returns>
-        public static BasicUserLocationInfo JsonObjectToIpApiResult(JObject jsonObject)
+        /// <returns>The <see cref="BasicUserLocationInfo"/>Basic information about the user's location.</returns>
+        public static BasicUserLocationInfo JObjectToBasicUserLocationInfo(JObject jsonObject)
         {
             BasicUserLocationInfo result = null;
             if (jsonObject != null)
@@ -50,11 +50,12 @@ namespace App.User.LocationInfo.Services
             return result;
         }
 
+
         /// <summary>
-        /// Get string from JObject and convert it to List.
+        /// Get languages as string from JObject and convert it to List.
         /// </summary>
-        /// <param name="jsonObject">The jsonObject<see cref="JObject"/></param>
-        /// <returns>The <see cref="List{string}"/></returns>
+        /// <param name="jsonObject">JObject</param>
+        /// <returns>The <see cref="List{String}"/>Languages</returns>
         public static List<string> StringLanguagesToList(JObject jsonObject)
         {
             List<string> languages = null;
