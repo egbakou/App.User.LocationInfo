@@ -7,19 +7,19 @@ Kodjo Laurent Egbakou
 namespace App.User.LocationInfo.Models
 {
     /// <summary>
-    /// Defines the <see cref="GeoPosition" />: GPS Coordinates.
+    /// Represents GPS Coordinates object.
     /// </summary>
     public class GeoPosition
     {
         /// <summary>
-        /// Gets or sets the Latitude.
+        /// Gets the Latitude.
         /// </summary>
-        public double Latitude { get; set; }
+        public double Latitude { get; }
 
         /// <summary>
-        /// Gets or sets the Longitude.
+        /// Gets the Longitude.
         /// </summary>
-        public double Longitude { get; set; }
+        public double Longitude { get; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="GeoPosition"/> class.

@@ -12,17 +12,17 @@ namespace App.User.LocationInfo.Constants
     public class APIResources
     {
         /// <summary>
-        /// Defines the Ipify Api Url.
+        /// Defines Ipify Api Url.
         /// </summary>
         public static string IPIFY_API = "https://api.ipify.org/?format=json";
 
         /// <summary>
-        /// Defines the IpApi Url.
+        /// Defines IpApi Url.
         /// </summary>
         public static string IPAPI = "https://ipapi.co/json";
 
         /// <summary>
-        /// Defines the Restcountries API URL.
+        /// Defines Restcountries API URL.
         /// </summary>
         public static string RESTCOUNTRIES_API = "https://restcountries.eu/rest/v2/name/";
     }

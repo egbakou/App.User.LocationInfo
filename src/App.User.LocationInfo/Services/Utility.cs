@@ -17,7 +17,7 @@ namespace App.User.LocationInfo.Services
     public class Utility
     {
         /// <summary>
-        /// Convert JObject(Json object) to BasicUserLocationInfo.
+        /// Convert JObject(JSON object) to BasicUserLocationInfo.
         /// </summary>
         /// <param name="jsonObject">The jsonObject<see cref="JObject"/></param>
         /// <returns>The <see cref="BasicUserLocationInfo"/>Basic information about the user's location.</returns>

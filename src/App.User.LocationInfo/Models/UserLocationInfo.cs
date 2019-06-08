@@ -14,94 +14,94 @@ namespace App.User.LocationInfo.Models
     public class UserLocationInfo
     {
         /// <summary>
-        /// Gets or sets the Ip adress
+        /// Gets the Ip adress
         /// </summary>
-        public string Ip { get; set; }
+        public string Ip { get; }
 
         /// <summary>
-        /// Gets or sets the City name
+        /// Gets the City name
         /// </summary>
-        public string City { get; set; }
+        public string City { get; }
 
         /// <summary>
-        /// Gets or sets the Region name
+        /// Gets the Region name
         /// </summary>
-        public string Region { get; set; }
+        public string Region { get; }
 
         /// <summary>
-        /// Gets or sets the Region code
+        /// Gets the Region code
         /// </summary>
-        public string RegionCode { get; set; }
+        public string RegionCode { get; }
 
         /// <summary>
-        /// Gets or sets the Country code
+        /// Gets the Country code
         /// </summary>
-        public string Country { get; set; }
+        public string Country { get; }
 
         /// <summary>
-        /// Gets or sets the Country name
+        /// Gets the Country name
         /// </summary>
-        public string CountryName { get; set; }
+        public string CountryName { get; }
 
         /// <summary>
-        /// Gets or sets the Link to the Country flag
+        /// Gets the URL of the Country flag image
         /// </summary>
-        public string CountryFlagUrl { get; set; }
+        public string CountryFlagUrl { get; }
 
         /// <summary>
-        /// Gets or sets the Continent code
+        /// Gets the Continent code
         /// </summary>
-        public string ContinentCode { get; set; }
+        public string ContinentCode { get; }
 
         /// <summary>
-        /// Gets or sets a value indicating whether Current user's country is in European Union ?
+        /// Gets a value indicating whether current user's country is in European Union
         /// </summary>
-        public bool InEU { get; set; }
+        public bool InEU { get; }
 
         /// <summary>
-        /// Gets or sets Postal code
+        /// Gets Postal code
         /// </summary>
-        public string Postal { get; set; }
+        public string Postal { get; }
 
         /// <summary>
-        /// Gets or sets user's location: Latitude and Latitude
+        /// Gets user's location: Latitude and Latitude
         /// </summary>
-        public GeoPosition Location { get; set; }
+        public GeoPosition Location { get; }
 
         /// <summary>
-        /// Gets or sets the Country TimeZone
+        /// Gets the Country TimeZone
         /// </summary>
-        public string Timezone { get; set; }
+        public string Timezone { get; }
 
         /// <summary>
-        /// Gets or sets the UTC Offset
+        /// Gets the UTC Offset
         /// </summary>
-        public string UtcOffset { get; set; }
+        public string UtcOffset { get; }
 
         /// <summary>
-        /// Gets or sets the Country Calling Code
+        /// Gets the Country Calling Code
         /// </summary>
-        public string CountryCallingCode { get; set; }
+        public string CountryCallingCode { get; }
 
         /// <summary>
-        /// Gets or sets the Currency of the country
+        /// Gets the Currency of the country
         /// </summary>
-        public string Currency { get; set; }
+        public string Currency { get; }
 
         /// <summary>
-        /// Gets or sets the country languages
+        /// Gets the country languages
         /// </summary>
-        public List<string> Languages { get; set; }
+        public List<string> Languages { get; }
 
         /// <summary>
-        /// Gets or sets the ASN
+        /// Gets the ASN
         /// </summary>
-        public string Asn { get; set; }
+        public string Asn { get; }
 
         /// <summary>
-        /// Gets or sets the Internet Service Provider
+        /// Gets the Internet Service Provider
         /// </summary>
-        public string Org { get; set; }
+        public string Org { get; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="UserLocationInfo"/> class.
