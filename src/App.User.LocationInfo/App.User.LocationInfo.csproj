@@ -11,7 +11,6 @@
     <PackageProjectUrl>https://github.com/egbakou/App.User.LocationInfo</PackageProjectUrl>
     <RepositoryUrl>https://github.com/egbakou/App.User.LocationInfo</RepositoryUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/egbakou/logos/master/icon.png</PackageIconUrl>
-    <PackageLicenseUrl>https://github.com/egbakou/App.User.LocationInfo/blob/master/LICENSE</PackageLicenseUrl>
     <Version>1.0.0</Version>
     <PackageReleaseNotes>See: https://github.com/egbakou/App.User.LocationInfo </PackageReleaseNotes>
     <PackageTags>Tracking, Xamarin, User, Location, IPAddress</PackageTags>

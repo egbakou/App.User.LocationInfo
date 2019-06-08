@@ -83,7 +83,7 @@ namespace App.User.LocationInfo.Services
 
 
         /// <summary>
-        /// Get informations about the user's location without URL of the country flag image.
+        /// Get information about the user's location without URL of the country flag image.
         /// </summary>
         /// <returns>An instance of <see cref="BasicUserLocationInfo"/></returns>
         public static async Task<BasicUserLocationInfo> GetBasicLocatioInfoAsync()
@@ -104,7 +104,7 @@ namespace App.User.LocationInfo.Services
 
 
         /// <summary>
-        /// Get informations about the user's location including URL of the country flag image.
+        /// Get information about the user's location including URL of the country flag image.
         /// </summary>
         /// <returns>The <see cref="Task{UserLocationInfo}"/></returns>
         public static async Task<UserLocationInfo> GetLocationInfoAsync()
