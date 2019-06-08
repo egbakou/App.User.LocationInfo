@@ -12,14 +12,14 @@ namespace App.User.LocationInfo.Models
     public class GeoPosition
     {
         /// <summary>
-        /// Gets the Latitude.
+        /// Gets or sets the Latitude.
         /// </summary>
-        public double Latitude { get; }
+        public double Latitude { get; set; }
 
         /// <summary>
-        /// Gets the Longitude.
+        /// Gets or sets the Longitude.
         /// </summary>
-        public double Longitude { get; }
+        public double Longitude { get; set; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="GeoPosition"/> class.

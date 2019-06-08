@@ -10,7 +10,7 @@
     <Description>Xamarin.Forms tracking plugin that retrieves information about user's location without GPS activation: IP address, country name, city name, GPS coordinates (latitude and longitude), country calling code, country currency, country flag image, etc. </Description>
     <PackageProjectUrl>https://github.com/egbakou/App.User.LocationInfo</PackageProjectUrl>
     <RepositoryUrl>https://github.com/egbakou/App.User.LocationInfo</RepositoryUrl>
-    <PackageIconUrl>https://raw.githubusercontent.com/egbakou/logos/master/logoApp-User-LocationInfo222.png</PackageIconUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/egbakou/logos/master/icon.png</PackageIconUrl>
     <PackageLicenseUrl>https://github.com/egbakou/App.User.LocationInfo/blob/master/LICENSE</PackageLicenseUrl>
     <Version>1.0.0</Version>
     <PackageReleaseNotes>See: https://github.com/egbakou/App.User.LocationInfo </PackageReleaseNotes>
