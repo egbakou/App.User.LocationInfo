@@ -64,7 +64,7 @@ namespace App.User.LocationInfo.Models
         public string Postal { get; }
 
         /// <summary>
-        /// Gets user's location: Latitude and Latitude
+        /// Gets user's location: Latitude and Longitude
         /// </summary>
         public GeoPosition Location { get; }
 

@@ -2,16 +2,40 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>App.User.LocationInfo</AssemblyName>
+    <RootNamespace>App.User.LocationInfo</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Kodjo Laurent Egbakou</Authors>
-    <Company>Lioncoding</Company>
-    <Description>A tracking plugin that retrieves informations about the location of a user of a Xamarin.Forms application without GPS activation; informations such as IP address, country name, city name, GPS coordinates (longitude and latitude), country currency, country flag URL, etc.</Description>
+    <Title>Tracking Plugin for Xamarin</Title>
+    <Description>Xamarin.Forms tracking plugin that retrieves information about user's location without GPS activation: IP address, country name, city name, GPS coordinates (latitude and longitude), country calling code, country currency, country flag image, etc. </Description>
     <PackageProjectUrl>https://github.com/egbakou/App.User.LocationInfo</PackageProjectUrl>
     <RepositoryUrl>https://github.com/egbakou/App.User.LocationInfo</RepositoryUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/egbakou/logos/master/logoApp-User-LocationInfo222.png</PackageIconUrl>
+    <PackageLicenseUrl>https://github.com/egbakou/App.User.LocationInfo/blob/master/LICENSE</PackageLicenseUrl>
+    <Version>1.0.0</Version>
+    <PackageReleaseNotes>See: https://github.com/egbakou/App.User.LocationInfo </PackageReleaseNotes>
+    <PackageTags>Tracking, Xamarin, User, Location, IPAddress</PackageTags>
+    <Copyright>Copyright 2019</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <NeutralLanguage>en</NeutralLanguage>
   </PropertyGroup>
 
-
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+    <DocumentationFile>bin\Release\App.User.LocationInfo.xml</DocumentationFile>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <None Include="..\..\nuget\readme.txt" PackagePath="readme.txt" Pack="true" />
+  </ItemGroup>
+  
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
     <PackageReference Include="RestSharp" Version="106.6.9" />

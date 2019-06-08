@@ -9,7 +9,6 @@ using App.User.LocationInfo.Models;
 using Newtonsoft.Json.Linq;
 using RestSharp;
 using System;
-using System.Diagnostics;
 using System.Threading.Tasks;
 
 namespace App.User.LocationInfo.Services
