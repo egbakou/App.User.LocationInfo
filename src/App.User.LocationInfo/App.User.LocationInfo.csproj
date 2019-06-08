@@ -5,7 +5,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Kodjo Laurent Egbakou</Authors>
     <Company>Lioncoding</Company>
-    <Description>This plugin retrieves informations about user's location without the GPS activation in a Xamarin.Forms mobile application.</Description>
+    <Description>A tracking plugin that retrieves informations about the location of a user of a Xamarin.Forms application without GPS activation; informations such as IP address, country name, city name, GPS coordinates (longitude and latitude), country currency, country flag URL, etc.</Description>
     <PackageProjectUrl>https://github.com/egbakou/App.User.LocationInfo</PackageProjectUrl>
     <RepositoryUrl>https://github.com/egbakou/App.User.LocationInfo</RepositoryUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/egbakou/logos/master/logoApp-User-LocationInfo222.png</PackageIconUrl>
