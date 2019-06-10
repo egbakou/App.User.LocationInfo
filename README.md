@@ -55,6 +55,10 @@ var userlocationInfo = await TrackingService.GetLocationInfoAsync();
 - LinkedIn: [Kodjo Laurent Egbakou](https://www.linkedin.com/in/laurentegbakou/)
 - Twitter: [@lioncoding](https://twitter.com/lioncoding)
 
+## Note
+
+Sample project and more updates are coming.
+
 ## License
 
 The MIT License (MIT) see [License file](https://github.com/egbakou/App.User.LocationInfo/blob/master/LICENSE)
