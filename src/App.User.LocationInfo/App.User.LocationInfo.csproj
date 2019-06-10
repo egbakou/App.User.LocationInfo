@@ -6,7 +6,7 @@
     <RootNamespace>App.User.LocationInfo</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Kodjo Laurent Egbakou</Authors>
-    <Description>Tracking Plugin for Xamarin. It retrieves information about user's location without GPS activation: IP address, country name, city name, GPS coordinates (latitude and longitude), country calling code, country currency, country flag image, etc.</Description>
+    <Description>Tracking Plugin for Xamarin. It retrieves information about user's location without GPS activation: IP Address, country name, city name, GPS coordinates (latitude and longitude), country calling code, country currency, country flag image, etc.</Description>
     <PackageProjectUrl>https://github.com/egbakou/App.User.LocationInfo</PackageProjectUrl>
     <RepositoryUrl>https://github.com/egbakou/App.User.LocationInfo</RepositoryUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/egbakou/logos/master/AppUserLocationInfo/icon.png?raw=true</PackageIconUrl>
