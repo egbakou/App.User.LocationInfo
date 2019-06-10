@@ -1,6 +1,6 @@
 # <img src="art/icon.png" alt="Icon" width="50" />Tracking Plugin for Xamarin
 
-This Plugin retrieves information about user's location without GPS activation: IP address, country name, city name, GPS coordinates (latitude and longitude), country calling code, country currency, country flag image, etc.
+This Plugin retrieves information about user's location without GPS activation: IP Address, country name, city name, GPS coordinates (latitude and longitude), country calling code, country currency, country flag image, etc.
 
 ## Setup
 
@@ -36,7 +36,7 @@ var country_code = await TrackingService.GetUserCountryCodeAsync();
 var country_name = await TrackingService.GetUserCountryCodeAsync();
 ```
 
-- Get [BasicUserLocationInfo](https://github.com/egbakou/App.User.LocationInfo/blob/master/src/App.User.LocationInfo/Models/BasicUserLocationInfo.cs) object(IP Address, Country, City, Currency, GPS coordinates, Internet Service Provider, ...)
+- Get [BasicUserLocationInfo](https://github.com/egbakou/App.User.LocationInfo/blob/master/src/App.User.LocationInfo/Models/BasicUserLocationInfo.cs) object (IP Address, Country, City, Currency, GPS coordinates, Internet Service Provider, ...)
 
 ```csharp
 // Get BasicUserLocationInfo object
@@ -62,4 +62,3 @@ The MIT License (MIT) see [License file](https://github.com/egbakou/App.User.Loc
 ## Contribution
 
 Feel free to create issues and PRs 😃
-
