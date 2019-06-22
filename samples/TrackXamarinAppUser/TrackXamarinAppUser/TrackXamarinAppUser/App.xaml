@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application
+    x:Class="TrackXamarinAppUser.App"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <Application.Resources>
+
+        <ResourceDictionary>
+            <Style TargetType="Frame">
+                <Setter Property="Margin" Value="5,5,5,5" />
+                <Setter Property="HasShadow" Value="True" />
+                <Setter Property="CornerRadius" Value="10" />
+            </Style>
+            <Style TargetType="ActivityIndicator">
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="Color" Value="#2b3391" />
+            </Style>
+            <Style x:Key="description" TargetType="Label">
+                <Setter Property="FontAttributes" Value="Italic" />
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="HorizontalOptions" Value="EndAndExpand" />
+                <Setter Property="VerticalOptions" Value="End" />
+                <Setter Property="TextColor" Value="Accent" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

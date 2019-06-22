@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="TrackXamarinAppUser.MainView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ffimageloadingsvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+    Title="{Binding Title}">
+
+    <ScrollView Orientation="Vertical" VerticalScrollBarVisibility="Never">
+        <StackLayout>
+            <Frame HeightRequest="40" HorizontalOptions="FillAndExpand">
+                <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Image HorizontalOptions="Start" Source="country" />
+                    <ActivityIndicator IsRunning="{Binding SyncInProcess}" IsVisible="{Binding SyncInProcess}" />
+                    <ffimageloadingsvg:SvgCachedImage
+                        HeightRequest="40"
+                        HorizontalOptions="Center"
+                        Source="{Binding UserLocationInfo.CountryFlagUrl}"
+                        WidthRequest="40" />
+                    <Label
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        Text="{Binding UserLocationInfo.CountryName}"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+                    <Label Style="{StaticResource Key=description}" Text="Country" />
+                </StackLayout>
+            </Frame>
+
+            <Frame HeightRequest="40" HorizontalOptions="FillAndExpand">
+                <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Image HorizontalOptions="Start" Source="city" />
+                    <ActivityIndicator IsRunning="{Binding SyncInProcess}" IsVisible="{Binding SyncInProcess}" />
+                    <Label
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        Text="{Binding UserLocationInfo.City}"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+                    <Label Style="{StaticResource Key=description}" Text="City" />
+                </StackLayout>
+            </Frame>
+
+
+            <Frame HeightRequest="40" HorizontalOptions="FillAndExpand">
+                <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Image HorizontalOptions="Start" Source="region" />
+                    <ActivityIndicator IsRunning="{Binding SyncInProcess}" IsVisible="{Binding SyncInProcess}" />
+                    <Label
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        Text="{Binding UserLocationInfo.Region}"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+                    <Label Style="{StaticResource Key=description}" Text="Region" />
+                </StackLayout>
+            </Frame>
+
+            <Frame HeightRequest="40" HorizontalOptions="FillAndExpand">
+                <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Image HorizontalOptions="Center" Source="gps" />
+                    <ActivityIndicator IsRunning="{Binding SyncInProcess}" IsVisible="{Binding SyncInProcess}" />
+                    <Label
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        Text="{Binding GpsPosition}"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+                    <Label Style="{StaticResource Key=description}" Text="GPS" />
+                </StackLayout>
+            </Frame>
+
+            <Frame HeightRequest="40" HorizontalOptions="FillAndExpand">
+                <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Image HorizontalOptions="Start" Source="ip" />
+                    <ActivityIndicator IsRunning="{Binding SyncInProcess}" IsVisible="{Binding SyncInProcess}" />
+                    <Label
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        Text="{Binding UserLocationInfo.Ip}"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+                    <Label Style="{StaticResource Key=description}" Text="IP Address" />
+                </StackLayout>
+            </Frame>
+
+            <Frame HeightRequest="40" HorizontalOptions="FillAndExpand">
+                <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Image HorizontalOptions="Start" Source="currency" />
+                    <ActivityIndicator IsRunning="{Binding SyncInProcess}" IsVisible="{Binding SyncInProcess}" />
+                    <Label
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        Text="{Binding UserLocationInfo.Currency}"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+                    <Label Style="{StaticResource Key=description}" Text="Currency" />
+                </StackLayout>
+            </Frame>
+
+            <Frame HeightRequest="40" HorizontalOptions="FillAndExpand">
+                <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Image HorizontalOptions="Start" Source="timezone" />
+                    <ActivityIndicator IsRunning="{Binding SyncInProcess}" IsVisible="{Binding SyncInProcess}" />
+                    <Label
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        Text="{Binding UserLocationInfo.Timezone}"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+                    <Label Style="{StaticResource Key=description}" Text="Timezone" />
+                </StackLayout>
+            </Frame>
+
+            <Frame HeightRequest="40" HorizontalOptions="FillAndExpand">
+                <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Image HorizontalOptions="Start" Source="utc" />
+                    <ActivityIndicator IsRunning="{Binding SyncInProcess}" IsVisible="{Binding SyncInProcess}" />
+                    <Label
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        Text="{Binding UserLocationInfo.UtcOffset}"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+                    <Label Style="{StaticResource Key=description}" Text="UTC-Offset" />
+                </StackLayout>
+            </Frame>
+
+            <Frame HeightRequest="40" HorizontalOptions="FillAndExpand">
+                <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Image HorizontalOptions="Start" Source="callingcode" />
+                    <ActivityIndicator IsRunning="{Binding SyncInProcess}" IsVisible="{Binding SyncInProcess}" />
+                    <Label
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        Text="{Binding UserLocationInfo.CountryCallingCode}"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+                    <Label Style="{StaticResource Key=description}" Text="Calling Code" />
+                </StackLayout>
+            </Frame>
+
+
+            <Frame HeightRequest="40" HorizontalOptions="FillAndExpand">
+                <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Image HorizontalOptions="Start" Source="language" />
+                    <ActivityIndicator IsRunning="{Binding SyncInProcess}" IsVisible="{Binding SyncInProcess}" />
+                    <Label
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        Text="{Binding Languages}"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
