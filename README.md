@@ -56,7 +56,7 @@ var userlocationInfo = await TrackingService.GetLocationInfoAsync();
 
 ![](samples/TrackXamarinAppUser/TrackXamarinAppUser/screenshots/app.user.locationinfo-sample.png)
 
-Check out it [here][https://github.com/egbakou/TrackXamarinAppUser] !
+Check out it [here](https://github.com/egbakou/TrackXamarinAppUser) !
 
 ## Created by: Kodjo Laurent Egbakou
 
