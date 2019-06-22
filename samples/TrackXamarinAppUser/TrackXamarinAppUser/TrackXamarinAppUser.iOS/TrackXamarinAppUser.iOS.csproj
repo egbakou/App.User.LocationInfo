@@ -138,4 +138,40 @@
       <Name>TrackXamarinAppUser</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\callingcode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\city.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\country.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\currency.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\gps.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\language.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\locate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\locateuser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\region.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\timezone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\utc.png" />
+  </ItemGroup>
 </Project>
