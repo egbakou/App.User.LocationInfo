@@ -2,10 +2,12 @@
 
 This Plugin retrieves information about user's location without GPS activation: IP Address, country name, city name, GPS coordinates (latitude and longitude), country calling code, country currency, country flag image, etc.
 
+![](samples/TrackXamarinAppUser/TrackXamarinAppUser/screenshots/app.user.locationinfo-sample.png)
+
 ## Setup
 
 - Available on NuGet: https://www.nuget.org/packages/App.User.LocationInfo/ [![NuGet](https://img.shields.io/nuget/v/App.User.LocationInfo.svg?label=NuGet)](https://www.nuget.org/packages/App.User.LocationInfo/)
-- Install into your PCL/.NET Standard project and Client projects.
+- Install into your shared project.
 
 ## Platform
 
@@ -50,6 +52,10 @@ var basic_userlocationInfo = await TrackingService.GetBasicLocatioInfoAsync();
 var userlocationInfo = await TrackingService.GetLocationInfoAsync();
 ```
 
+## Sample project
+
+![](samples/TrackXamarinAppUser/TrackXamarinAppUser/screenshots/app.user.locationinfo-sample.png)
+
 ## Created by: Kodjo Laurent Egbakou
 
 - LinkedIn: [Kodjo Laurent Egbakou](https://www.linkedin.com/in/laurentegbakou/)
@@ -57,7 +63,7 @@ var userlocationInfo = await TrackingService.GetLocationInfoAsync();
 
 ## Note
 
-Sample project and more updates are coming.
+More updates are coming.
 
 ## License
 
