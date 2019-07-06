@@ -35,7 +35,7 @@ var country_code = await TrackingService.GetUserCountryCodeAsync();
 
 ```csharp
 // Get current user's country name
-var country_name = await TrackingService.GetUserCountryCodeAsync();
+var country_name = await TrackingService.GetUserCountryNameAsync();
 ```
 
 - Get [BasicUserLocationInfo](https://github.com/egbakou/App.User.LocationInfo/blob/master/src/App.User.LocationInfo/Models/BasicUserLocationInfo.cs) object (IP Address, Country, City, Currency, GPS coordinates, Internet Service Provider, ...)
@@ -56,7 +56,7 @@ var userlocationInfo = await TrackingService.GetLocationInfoAsync();
 
 ![](samples/TrackXamarinAppUser/TrackXamarinAppUser/screenshots/app.user.locationinfo-sample.png)
 
-Check out it [here](https://github.com/egbakou/TrackXamarinAppUser) !
+Check it out [here](https://github.com/egbakou/TrackXamarinAppUser) !
 
 ## Created by: Kodjo Laurent Egbakou
 
